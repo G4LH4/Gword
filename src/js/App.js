@@ -1,3 +1,5 @@
+import React from "react";
+
 // const getEl = (selector) => document.querySelector(selector);
 
 // const $js = getEl("#js");
@@ -28,14 +30,21 @@
 // `;
 // };
 
-import App from "./App.js";
-import React from "react";
-import ReactDOM from "react-dom";
-import "../css/style.css";
+const App = () => {
+  return (
+    <div className="app">
+      <div className="input">
+        <textarea id="js"></textarea>
+        <button>Show output</button>
+      </div>
+      <div className="output">
+        <iframe srcDoc=""></iframe>
+        <p id="results"></p>
+      </div>
+    </div>
+  );
+};
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+console.log("working!");
+
+export default App;

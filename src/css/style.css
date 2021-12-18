@@ -1,30 +1,32 @@
-body{
-    background-color: #211f22;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+  background-color: #211f22;
 }
 
-.app{
-    display: flex;
-    flex-direction: column;
+.app {
+  display: flex;
+  flex-direction: column;
 }
 
-#js{
-    min-width: 100%;
-    min-height: 50vh;
-    background-color: #403e41;
-    color: rgba(255, 255, 255, 0.603);
+#js {
+  font-family: "Open Sans", sans-serif;
+  min-width: 100%;
+  min-height: 50vh;
+  background-color: #403e41;
+  color: rgba(255, 255, 255, 0.603);
 }
 
-.output iframe{
-    min-width: 100%;
-    min-height: 38vh;
-    background-color: #2c2a2d;
+.output iframe {
+  min-width: 100%;
+  min-height: 38vh;
+  background-color: #2c2a2d;
 }
 
-button{
-    color: #ffd866;
-    background-color: #000000;
-    text-transform: uppercase;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 5px;
+button {
+  font-family: "Open Sans", sans-serif;
+  color: #ffd866;
+  background-color: #000000;
+  text-transform: uppercase;
+  border-radius: 5px;
 }
