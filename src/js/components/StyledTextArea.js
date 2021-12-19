@@ -1,14 +1,21 @@
+import React from "react";
 import styled from "styled-components";
 
-const StyledTextArea = styled.textarea`
-  width: 100%;
-  resize: horizontal;
-  font-family: "Open Sans", sans-serif;
-  background-color: #403e41;
-  color: rgba(255, 255, 255, 0.603);
-  margin-left: 10px;
-  min-height: 56vh;
-  border-radius: 10px;
+const StyledTarea = styled.textarea`
+  font-family: "Roboto", sans-serif;
+  display: block;
+  margin: 0 auto;
+  background-color: #ecf0f1;
+  width: 50%;
+  height: 90vh;
+  resize: none;
+  outline: none;
+  overflow: auto;
+  box-shadow: 3px 3px 3px black;
 `;
 
-export default StyledTextArea;
+const styledTextarea = (props) => {
+  return <StyledTarea></StyledTarea>;
+};
+
+export default styledTextarea;

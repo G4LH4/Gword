@@ -6,8 +6,9 @@ module.exports = {
     main: "./src/js/index.js",
   },
   output: {
+    globalObject: "self",
     path: path.resolve(__dirname, "build"),
-    filename: "bundle.js",
+    filename: "[bundle].js",
   },
   watch: true,
   resolve: {
@@ -27,6 +28,10 @@ module.exports = {
         use: {
           loader: "babel-loader",
         },
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/,
+        use: ["file-loader"],
       },
       {
         test: /\.css$/,

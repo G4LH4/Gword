@@ -1,18 +1,17 @@
 import React from "react";
-import StyledTextArea from "./components/StyledTextArea";
-import StyledOutputIframe from "./components/StyledOutputIframe";
+import StyledTextarea from "./components/StyledTextarea";
+import CreateASettings from "./components/CreateASettings";
+import DivSettingsPage from "./components/DivSettingsPage";
 
 const App = () => {
   return (
     <div className="app">
-      <div className="textArea">
-        <StyledTextArea id="html" placeholder="HTML"></StyledTextArea>
-        <StyledTextArea id="css" placeholder="CSS"></StyledTextArea>
-        <StyledTextArea id="js" placeholder="JS"></StyledTextArea>
-      </div>
-      <div className="output">
-        <StyledOutputIframe srcDoc="" id="iframe"></StyledOutputIframe>
-        <p id="results"></p>
+      <div className="paper">
+        <div className="header">
+          <CreateASettings className="enabled" />
+        </div>
+        <DivSettingsPage />
+        <StyledTextarea></StyledTextarea>
       </div>
     </div>
   );
