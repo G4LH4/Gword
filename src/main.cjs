@@ -1,4 +1,6 @@
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, globalShortcut } = require("electron");
+
+const fs = require("fs");
 
 const createWindow = () => {
   const win = new BrowserWindow({
@@ -12,4 +14,13 @@ const createWindow = () => {
 
 app.whenReady().then(() => {
   createWindow();
+  // useSaveFiles();
 });
+
+// const useSaveFiles = () => {
+//   globalShortcut.register("CommandOrControl+S", () => {
+//     fs.writeFile("Document", "a", (err) => {
+//       if (err) console.log(err);
+//     });
+//   });
+// };
