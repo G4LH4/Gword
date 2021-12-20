@@ -6,7 +6,7 @@ import styled from "styled-components";
 const CreateErrors = () => {
   const [enabled, setEnabled] = useState(true);
 
-  const className = enabled ? "enabled-errors" : "disabled";
+  const className = enabled ? "enabled" : "disabled";
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -15,10 +15,10 @@ const CreateErrors = () => {
   };
 
   const StyledErrorsIMG = styled.img`
+    display: flex;
+    position: relative;
     width: 4%;
     border-radius: 10px;
-    position: relative;
-    float: right;
 
     &:hover {
       transition: 0.5s;

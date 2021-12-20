@@ -3,12 +3,12 @@ import styled from "styled-components";
 
 const StyledTarea = styled.textarea`
   font-family: "Roboto", sans-serif;
-  display: block;
+  display: flex;
   margin: 0 auto;
   padding: 10px;
   background-color: #ecf0f1;
   width: 50%;
-  height: 90vh;
+  height: 84vh;
   resize: none;
   outline: none;
   overflow: auto;

@@ -10,7 +10,7 @@ const CreateDivSettingsPage = styled.div`
   margin-right: auto;
   color: #000;
   width: 100vh;
-  height: 90vh;
+  height: 86vh;
   font-family: "Roboto", sans-serif;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.5);

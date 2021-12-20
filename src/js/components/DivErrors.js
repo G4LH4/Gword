@@ -5,14 +5,15 @@ const CreateDivErrorsPage = styled.div`
   position: absolute;
   left: 0;
   right: 0;
+  bottom: 7.7vh;
   margin-left: auto;
   margin-right: auto;
   color: #000;
   width: 100vh;
-  height: 90vh;
+  height: 86vh;
   font-family: "Roboto", sans-serif;
   border-radius: 15px;
-  background: rgba(255, 255, 255, 0.5);
+  background: #ff000027;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(50px);
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -33,7 +34,6 @@ export const DivErrors = (props) => {
   return (
     <CreateDivErrorsPage className={props.status}>
       <StyledH1>Errors</StyledH1>
-      {props.content}
     </CreateDivErrorsPage>
   );
 };

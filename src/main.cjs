@@ -1,12 +1,11 @@
-const { app, BrowserWindow, globalShortcut } = require("electron");
-
-const fs = require("fs");
+const { app, BrowserWindow } = require("electron");
 
 const createWindow = () => {
   const win = new BrowserWindow({
     width: 800,
     height: 750,
-    title: "galhacode",
+    title: "GWORD",
+    autoHideMenuBar: true,
   });
 
   win.loadFile("./build/index.html");
