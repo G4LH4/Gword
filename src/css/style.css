@@ -12,6 +12,9 @@ body{
   flex-direction: row;
 }
 
+.setWidth3{
+  width: 3%;
+}
 
 /* .Login{
   border-radius: 10px;
