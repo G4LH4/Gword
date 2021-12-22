@@ -1,49 +1,27 @@
-import React from "react";
 import styled from "styled-components";
 
-const StyledTarea = styled.textarea`
-  font-family: "Roboto", sans-serif;
+const DivStyledTarea = styled.textarea`
   display: flex;
+  font-size: 16px;
   margin: 0 auto;
-  padding: 10px;
-  background-color: #ecf0f1;
-  width: 50%;
-  height: 84vh;
+  padding: 15px;
+  width: 98.8%;
   resize: none;
   outline: none;
   overflow: auto;
-  box-shadow: 3px 3px 3px black;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  @media (min-width: 980px) {
+    height: 88.1vh;
+  }
 `;
 
-const HandleTextArea = (e) => {
-  console.log(checkCapitalWord(e));
-};
-
-const checkCapitalWord = (e) => {
-  if (e.includes(".")) {
-    const splitWord = e.trim().split(".");
-
-    if (splitWord[0] === "" || splitWord[1] === "") return;
-
-    const capitalWord = splitWord[1].trim().split("");
-
-    if (capitalWord[0] === capitalWord[0].toLowerCase()) {
-      capitalWord[0].toLowerCase();
-
-      const p = document.createElement("p");
-      p.textContent = "Error: its lowerCase";
-
-      return p;
-    } else {
-      console.log("Its uppercase!");
-    }
-  }
-};
-
-const styledTextarea = () => {
-  return (
-    <StyledTarea onChange={(e) => HandleTextArea(e.target.value)}></StyledTarea>
-  );
-};
-
-export default styledTextarea;
+export default DivStyledTarea;

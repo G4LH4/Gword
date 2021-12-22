@@ -2,8 +2,8 @@ const { app, BrowserWindow } = require("electron");
 
 const createWindow = () => {
   const win = new BrowserWindow({
-    width: 800,
-    height: 750,
+    width: 1200,
+    height: 900,
     title: "GWORD",
     autoHideMenuBar: true,
   });
