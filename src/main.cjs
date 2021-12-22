@@ -6,6 +6,7 @@ const createWindow = () => {
     height: 750,
     title: "GWORD",
     autoHideMenuBar: true,
+    backgroundColor: "#2e2c29",
   });
 
   win.loadFile("./build/index.html");

@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body{
-  background-color: #CCD1D1 ;
+  margin: 0;
+  padding: 0;
+  background-color: #CCD1D1;
+  font-family: "Roboto", sans-serif;
 }
 
-.header a{
+.paper{
   display: flex;
-  flex-direction: column;
-  margin-top: 10px;
+  flex-direction: row;
 }
 
-.enabled{
+
+/* .Login{
+  border-radius: 10px;
+} */
+
+/* .enabled{
   transition: 1.5s;
   transform: translateX(-110vh);
 }
@@ -18,4 +25,4 @@ body{
 .disabled{
   transition: 1.5s;
   transform: translateX(0);
-}
+} */
